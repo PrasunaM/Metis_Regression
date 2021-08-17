@@ -10,13 +10,15 @@ Goal of this project was to use linear regression to predict recipe ratings by s
 # Workflow
 1. [Web Scraping](https://github.com/PrasunaM/Predict_Recipe_Rating-MetisRegression/blob/0ee936eb397f92b00064e8600fc22a39f6ca942c/AllRecipes_Scraping%20Part1.ipynb)
 2. [EDA & Baseline Regression](https://github.com/PrasunaM/Predict_Recipe_Rating-MetisRegression/blob/0ee936eb397f92b00064e8600fc22a39f6ca942c/AllRecipes_EDA%20&%20Baseline%20Regression.ipynb)
-3. [LR with log transformation and Polynomial Regression](https://github.com/PrasunaM/Predict_Recipe_Rating-MetisRegression/blob/0ee936eb397f92b00064e8600fc22a39f6ca942c/AllRecipes_EDA%20&%20Baseline%20Regression.ipynb)
+3. [LR with log transformation and Polynomial Regression](https://github.com/PrasunaM/Predict_Recipe_Rating-MetisRegression/blob/4b68e99802c1f03a60db8d35cc7a4d40ab24cf5f/Allrecipes_Modeling.ipynb)
 4. [Presentation Slides](https://github.com/PrasunaM/Predict_Recipe_Rating-MetisRegression/blob/0ee936eb397f92b00064e8600fc22a39f6ca942c/Regression_presentation.pdf)
 
 
 ## Conclusion
 
 Logistic regression and polynomial regression with Lasso regularization modelling techniques were opted for modeling. Unfortunately, the target variable had no linear relationship with any of the features and hence linear regression performed poorly. Polynomial regression performed well on training data only indicating that the model was overfit. Hence, Lasso regularization was performed to address the overfit but could not be eliminated. Kfold cross validation was conducted between the models and linear regression performed better than polynomial.
+
+<img src="Recipe_Transformation.png" alt="RecipeTransformation" width="800" height = "600"/> 
 
 But it is important to note that none of the modelling techniques would be recommended to predict the ratings because of the low accuracy. However, future goals of the project include gathering more diverse data and features that can explain the nature of ratings on the recipes.
 
